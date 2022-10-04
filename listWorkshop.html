@@ -25,7 +25,7 @@
 
   </head>
 
-<body style="background-color: #8B4BC4">
+<body style="background-color: rgba(139, 75, 196)">
 
   <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
@@ -56,7 +56,7 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="#" class="active">List Workshop</a></li>
               <li><a href="createWorkshop.html">Create Workshop</a></li>
-              <li><div class="gradient-button"><a id="" href=""><i class="fa fa-sign-in-alt"></i> Sign In Now </a></div></li> 
+              <li><div class="border-button"><a id="" href=""><i class="fa fa-sign-in-alt"></i> Login with SSO </a></div></li> 
             </ul>        
             <a class='menu-trigger'>
                 <span>Menu</span>
@@ -72,8 +72,52 @@
   <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
     <div class="container">
       <div class="col-lg-12">
-        <div class="listworkshop first-service wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+        <div class="filter mb-3">
           <div class="row">
+            <div class="col-lg-5">
+              <p>What are you looking for?</p>
+            </div>
+            <div class="col">
+              <p>Category</p>
+            </div>
+            <div class="col">
+              <p>Schudle</p>
+            </div>
+            <div class="col">
+              <p>    </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-5">
+              <fieldset>
+                <input type="address" name="address" class="" placeholder="Search for workshopname" autocomplete="on" required>
+              </fieldset>
+            </div>
+            <div class="col">
+              <fieldset>
+                <select type="address" name="address" class="" autocomplete="on" required>
+                  <option value="">all</option>
+                  <option value="">b</option>
+                  <option value="">c</option>
+                </select>
+              </fieldset>
+            </div>
+            <div class="col">
+              <fieldset>
+                <select type="address" name="address" class="" autocomplete="on" required>
+                  <option value="">all</option>
+                  <option value="">b</option>
+                  <option value="">c</option>
+                </select>
+              </fieldset>
+            </div>
+            <div class="col">
+              <button>Search</button>
+            </div>
+          </div>
+        </div>
+        <div class="listworkshop">
+          <div class="row m-4">
             <div class="col-lg-3">
               <img src="assets/images/Rectangle 34.png" alt="">
             </div>
@@ -117,15 +161,14 @@
                 </div>
                 <div class="col-lg-4">
                   <div class="border-button scroll-to-section">
-                    <a href="#">Daftar</a>
+                    <a href="detailWorkshop.html">Lihat Detail</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="listworkshop first-service wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-          <div class="row">
+          <hr>
+          <div class="row m-4">
             <div class="col-lg-3">
               <img src="assets/images/Rectangle 34.png" alt="">
             </div>
@@ -169,15 +212,14 @@
                 </div>
                 <div class="col-lg-4">
                   <div class="border-button scroll-to-section">
-                    <a href="#">Daftar</a>
+                    <a href="detailWorkshop.html">Lihat Detail</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="listworkshop first-service wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-          <div class="row">
+          <hr>
+          <div class="row m-4">
             <div class="col-lg-3">
               <img src="assets/images/Rectangle 34.png" alt="">
             </div>
@@ -221,115 +263,21 @@
                 </div>
                 <div class="col-lg-4">
                   <div class="border-button scroll-to-section">
-                    <a href="#">Daftar</a>
+                    <a href="detailWorkshop.html">Lihat Detail</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="listworkshop first-service wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-          <div class="row">
-            <div class="col-lg-3">
-              <img src="assets/images/Rectangle 34.png" alt="">
-            </div>
-            <div class="col-lg-9">
-              <h4>Workshop Tittle</h4>
-              <p>Lorem ipsum dolor consectetur adipiscing elit sedder williamsburg photo booth quinoa and fashion axe.</p>
-              <p>
-                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="2.5" y="6.25" width="2.5" height="2.5" fill="#5D5D5D"/>
-                  <rect x="2.5" y="10" width="2.5" height="2.5" fill="#5D5D5D"/>
-                  <rect x="6.25" y="10" width="2.5" height="2.5" fill="#5D5D5D"/>
-                  <rect x="10" y="10" width="2.5" height="2.5" fill="#5D5D5D"/>
-                  <rect x="6.25" y="6.25" width="2.5" height="2.5" fill="#5D5D5D"/>
-                  <rect x="10.625" y="6.875" width="1.25" height="1.25" stroke="#989696" stroke-width="1.25"/>
-                  <rect x="0.5" y="1.75" width="14" height="12.75" rx="1.5" stroke="#5D5D5D"/>
-                  <path d="M3.75 0V2.5" stroke="#989696"/>
-                  <path d="M11.25 0V2.5" stroke="#989696"/>
-                  <path d="M14.375 4.37492H0.625008C0.499837 1.50002 1.87501 2.49992 2.50001 1.87492C2.70834 1.87492 4.28475 2.43306 8.75001 1.87492C15.4998 1.03123 14.375 3.54159 14.375 4.37492Z" fill="#5D5D5D"/>
-                </svg>
-                Lorem ipsum
-              </p>
-              <p>
-                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.5 4V9.5L6.5 13.5" stroke="#5D5D5D" stroke-width="2"/>
-                  <circle cx="8.5" cy="8.5" r="7.5" stroke="#5D5D5D" stroke-width="2"/>
-                </svg>                  
-                Lorem ipsum
-              </p>
-              <p>
-                <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="1" y="1" width="15" height="13" stroke="#5D5D5D" stroke-width="2"/>
-                  <path d="M7.25 11V4.82L8.26 5.78H6.05V4H9.61V11H7.25Z" fill="#5D5D5D"/>
-                </svg> 
-                Lorem ipsum
-              </p>
-              <div class="row mt-3">
-                <div class="col-lg-8">
-                  <div class="item">
-                    <p>Kegiatan ini telah terdaftar sebanyak ... audience</p>
-                  </div>  
-                </div>
-                <div class="col-lg-4">
-                  <div class="border-button scroll-to-section">
-                    <a href="#">Daftar</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="listworkshop first-service wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-          <div class="row">
-            <div class="col-lg-3">
-              <img src="assets/images/Rectangle 34.png" alt="">
-            </div>
-            <div class="col-lg-9">
-              <h4>Workshop Tittle</h4>
-              <p>Lorem ipsum dolor consectetur adipiscing elit sedder williamsburg photo booth quinoa and fashion axe.</p>
-              <p>
-                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="2.5" y="6.25" width="2.5" height="2.5" fill="#5D5D5D"/>
-                  <rect x="2.5" y="10" width="2.5" height="2.5" fill="#5D5D5D"/>
-                  <rect x="6.25" y="10" width="2.5" height="2.5" fill="#5D5D5D"/>
-                  <rect x="10" y="10" width="2.5" height="2.5" fill="#5D5D5D"/>
-                  <rect x="6.25" y="6.25" width="2.5" height="2.5" fill="#5D5D5D"/>
-                  <rect x="10.625" y="6.875" width="1.25" height="1.25" stroke="#989696" stroke-width="1.25"/>
-                  <rect x="0.5" y="1.75" width="14" height="12.75" rx="1.5" stroke="#5D5D5D"/>
-                  <path d="M3.75 0V2.5" stroke="#989696"/>
-                  <path d="M11.25 0V2.5" stroke="#989696"/>
-                  <path d="M14.375 4.37492H0.625008C0.499837 1.50002 1.87501 2.49992 2.50001 1.87492C2.70834 1.87492 4.28475 2.43306 8.75001 1.87492C15.4998 1.03123 14.375 3.54159 14.375 4.37492Z" fill="#5D5D5D"/>
-                </svg>
-                Lorem ipsum
-              </p>
-              <p>
-                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.5 4V9.5L6.5 13.5" stroke="#5D5D5D" stroke-width="2"/>
-                  <circle cx="8.5" cy="8.5" r="7.5" stroke="#5D5D5D" stroke-width="2"/>
-                </svg>                  
-                Lorem ipsum
-              </p>
-              <p>
-                <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="1" y="1" width="15" height="13" stroke="#5D5D5D" stroke-width="2"/>
-                  <path d="M7.25 11V4.82L8.26 5.78H6.05V4H9.61V11H7.25Z" fill="#5D5D5D"/>
-                </svg> 
-                Lorem ipsum
-              </p>
-              <div class="row mt-3">
-                <div class="col-lg-8">
-                  <div class="item">
-                    <p>Kegiatan ini telah terdaftar sebanyak ... audience</p>
-                  </div>  
-                </div>
-                <div class="col-lg-4">
-                  <div class="border-button scroll-to-section">
-                    <a href="#">Daftar</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <hr>
+          <div class="pagination mt-3 py-1 px-3" style="background-color: white">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <p>...</p>
+            <a href="#">9</a>
+            <a href="#">10</a>
+            <a href="#">&raquo;</a>
           </div>
         </div>
       </div>

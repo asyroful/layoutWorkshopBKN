@@ -25,7 +25,7 @@
 
   </head>
 
-<body>
+<body style="background-color: rgba(139, 75, 196, 0.9)">
 
   <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
@@ -53,10 +53,31 @@
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
-              <li><a href="#" class="active">Home</a></li>
+              <li><a href="#">Home</a></li>
               <li><a href="listWorkshop.html">List Workshop</a></li>
               <li><a href="createWorkshop.html">Create Workshop</a></li>
-              <li><div class="border-button"><a id="" href="home.html"><i class="fa fa-sign-in-alt"></i> Login with SSO </a></div></li> 
+              <li>
+                <ul id="dropdown">
+                  <li>
+                    <div class="dropbtn">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12" cy="10" r="3" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      <circle cx="12" cy="12" r="9" stroke="white" stroke-width="2"/>
+                      <path d="M17.7805 18.8264C17.9076 18.7566 17.9678 18.6055 17.914 18.4708C17.5284 17.5045 16.7856 16.6534 15.7814 16.0332C14.6966 15.3632 13.3674 15 12 15C10.6326 15 9.30341 15.3632 8.21858 16.0332C7.21444 16.6534 6.4716 17.5045 6.08598 18.4708C6.03223 18.6055 6.09236 18.7566 6.21948 18.8264C9.81971 20.803 14.1803 20.803 17.7805 18.8264Z" fill="white"/>
+                      </svg>
+                      Hi, James!
+                      <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.00002 11L0.0718145 0.5L13.9282 0.500001L7.00002 11Z" fill="white"/>
+                      </svg>  
+                    </div>
+                    <ul>
+                      <li><a href="laporanPembicara.html"><span>Laporan sebagai Pembicara</span></a></li>
+                      <li><a href="laporanPeserta.html"><span>Laporan sebagai Peserta</span></a></li>
+                      <li><a href="#"><span>Logout</span></a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li> 
             </ul>        
             <a class='menu-trigger'>
                 <span>Menu</span>
@@ -69,135 +90,137 @@
   </header>
   <!-- ***** Header Area End ***** -->
 
-  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+  <div class="main-banner" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
+      <div class="col-lg-12">
+        <h2>Laporan sebagai Peserta</h2>
+        <div class="upper my-3">
+          <button class="me-1">Kesuluruhan</button>
+          <button class="me-1">Judul Workshop</button>
+          <button class="me-1">Jadwal Workshop</button>
+          <div class="search">
+            <input type="address" name="address" class="align-self-end" placeholder="Search" autocomplete="on" required>
+          </div>
+        </div>
+        <div class="tabel first-service">
           <div class="row">
-            <div class="col-lg-6 align-self-center">
-              <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <h2>FORUM WORKSHOP</h2>
-                    <p>Wadah yang membahas topik tertentu dimana para peserta bebas mengutarakan pendapat atau ilmu yang mereka punya sebagai bahan diskusi.</p>
-                  </div>
-                  <div class="col-lg-12">
-                    <form>
-                      <input placeholder="Enter Your Email" />
-                      <button>Subscribe Now</button>
-                    </form>
-                  </div>
-                </div>
+            <div class="col">
+              <p>Judul</p>
+            </div>
+            <div class="col">
+              <p>Jadwal Workshop</p>
+            </div>
+            <div class="col">
+              <p>Evaluasi</p>
+            </div>
+            <div class="col">
+              <p>Sertifikat</p>
+            </div>
+          </div>
+          <hr>
+          <div class="row field">
+            <div class="col judul">
+              <p>lorem ipsum</p>
+            </div>
+            <div class="col tanggal">
+              <p>01/10/2022</p>
+            </div>
+            <div class="col evaluasi">
+              <button><a id="modal_trigger" style="color:rgba(139, 75, 196, 1)" href="#modal">evaluasi disini</a></button>
+            </div>
+            <div class="col sertif">
+              <div class="green mb-1">
+                <button>Download</button>
+              </div>
+              <div>
+                <button>Lihat</button>
               </div>
             </div>
-            <div class="col-lg-6">
-              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <img src="assets/images/hero.png" alt="">
-              </div>
+          </div>
+          <hr>
+          <div class="row field">
+            <div class="col judul">
+              <p>lorem ipsum</p>
             </div>
+            <div class="col tanggal">
+              <p>01/10/2022</p>
+            </div>
+            <div class="col evaluasi">
+              <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 6.5L6.625 12.125L16 0.875" stroke="#8B4BC4" stroke-width="2"/>
+              </svg>                      
+            </div>
+            <div class="col sertif">
+              <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.875 28.1243L28.125 16.8743" stroke="#FF6359" stroke-width="2"/>
+                <path d="M28.125 28.125L16.875 16.875" stroke="#FF6359" stroke-width="2"/>
+              </svg> 
+            </div>
+          </div>
+          <hr>
+          <div class="pagination mt-3" >
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <p>...</p>
+            <a href="#">9</a>
+            <a href="#">10</a>
+            <a href="#">&raquo;</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <img src="assets/images/FLAG1.png" width="100%" alt="">
+  <div id="modal" class="popupContainer" style="display:none;">
+    <!-- <div class="popupHeader">
+      <span class="modal_close"><i class="fa fa-times"></i></span>
+    </div> -->
+    <div class="popupHeader">
+      <span class="header_title">Form Evaluasi Peserta</span>
+    </div>
 
-  <div id="services" class="services section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 offset-lg-2">
-          <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-            <h4>SYARAT <em>&amp;</em> KETENTUAN</h4>
-            <img src="assets/images/heading-line-dec.png" alt="">
-            <img src="assets/images/heading-line-dec.png" alt="">
-            <img src="assets/images/heading-line-dec.png" alt="">
-            <img src="assets/images/heading-line-dec.png" alt="">
-            <img src="assets/images/heading-line-dec.png" alt="">
-          </div>
+    <section class="popupBody">
+      <div>
+        <p>Pembaharuan yang diperoleh</p>
+        <textarea type="text" name="address" class="" autocomplete="on" required></textarea>
+        <div class="rate">
+          <input type="radio" id="star5" name="rate" value="5" />
+          <label for="star5" title="text">5 stars</label>
+          <input type="radio" id="star4" name="rate" value="4" />
+          <label for="star4" title="text">4 stars</label>
+          <input type="radio" id="star3" name="rate" value="3" />
+          <label for="star3" title="text">3 stars</label>
+          <input type="radio" id="star2" name="rate" value="2" />
+          <label for="star2" title="text">2 stars</label>
+          <input type="radio" id="star1" name="rate" value="1" />
+          <label for="star1" title="text">1 star</label>
+          <p>Penilaian</p>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="service-item first-service wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-            <div class="icon"></div>
-            <h4>PESERTA</h4>
-            <p>Lorem ipsum dolor consectetur adipiscing elit sedder williamsburg photo booth quinoa and fashion axe.</p>
-            <div class="text-button">
-              <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="service-item second-service wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-            <div class="icon"></div>
-            <h4>PEMBICARA</h4>
-            <p>Lorem ipsum dolor consectetur adipiscing elit sedder williamsburg photo booth quinoa and fashion axe.</p>
-            <div class="text-button">
-              <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
-            </div>
-          </div>
+      <div class="">
+        <p>Saran perbaikan untuk pembicara</p>
+        <textarea type="text" name="address" class="" autocomplete="on" required></textarea>
+        <div class="rate">
+          <input type="radio" id="star5" name="rate" value="5" />
+          <label for="star5" title="text">5 stars</label>
+          <input type="radio" id="star4" name="rate" value="4" />
+          <label for="star4" title="text">4 stars</label>
+          <input type="radio" id="star3" name="rate" value="3" />
+          <label for="star3" title="text">3 stars</label>
+          <input type="radio" id="star2" name="rate" value="2" />
+          <label for="star2" title="text">2 stars</label>
+          <input type="radio" id="star1" name="rate" value="1" />
+          <label for="star1" title="text">1 star</label>
+          <p>Penilaian</p>
         </div>
       </div>
-    </div>
-  </div>
-
-  <div id="about" class="about-us section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 align-self-center">
-          <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-            <div class="row">
-              <div class="col-lg-12 mb-3">
-                <h4>PESERTA</h4>
-                <h2 class="my-2">Hadir dalam kegiatan workshop guna untuk meningkatkan ilmu.</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-              </div>
-              <div class="col-lg-12">
-                <div class="border-button scroll-to-section">
-                  <a href="#contact">Peserta, daftar disini!</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-            <img src="assets/images/peserta.png" height="500px" alt="">
-          </div>
-        </div>
+      <div >
+        <p>Upload catatan anda</p>
+        <input type="file" name="address" class="" autocomplete="on" required>
+        <p class="notice">*konfirmasi lewat pdf</p>
       </div>
-      <div class="col-lg-12 my-5">
-        <div class="quotes first-service wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-          <p>"Berbagi ilmu adalah tindakan persahabatan yang paling mendasar karena itu adalah caramu dapat memberikan sesuatu tanpa kehilangan sesuatu."</p>
-          <h5 class="mt-2">-Richard Stallman</h5>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="right-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-            <img src="assets/images/pembicara.png" height="500px" alt="">
-          </div>
-        </div>
-        <div class="col-lg-6 align-self-center">
-          <div class="left-content show-up header-text wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
-            <div class="row">
-              <div class="col-lg-12 mb-3">
-                <h4>PEMBICARA</h4>
-                <h2 class="my-2">Berbagi ilmu dengan mengadakan kegiatan workshop</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-              </div>
-              <div class="col-lg-12">
-                <div class="border-button scroll-to-section">
-                  <a href="#contact">Pembicara, daftar disini!</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      <button type="submit">Konfirmasi</button>
+    </section>
   </div>
 
   <footer id="newsletter">
